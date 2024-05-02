@@ -1,0 +1,35 @@
+Database host address:(yourusername).mysql.pythonanywhere-services.com
+Username:(yourusername)
+Pass: (yourpassword)
+Host: (yourusername)$default
+
+DROP TABLE IF EXISTS Category;
+CREATE TABLE Category (
+  category_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  category VARCHAR(255)
+);
+
+INSERT INTO Category (category)
+VALUES ('Drama'),
+       ('Crime'),
+       ('Action'),
+       ('Adventure'),
+       ('Fantasy'),
+       ('Thriller'),
+       ('Sci-Fi'),
+       ('Western'),
+       ('Biography'),
+       ('War'),
+       ('Mystery'),
+       ('Horror'),
+       ('Comedy'),
+       ('Romance'),
+       ('Animation'),
+       ('Family'),
+       ('History'),
+       ('Musical'),
+       ('Sport'),
+       ('Music'),
+       ('Documentary'),
+       ('Film-Noir'),
+       ('Short');

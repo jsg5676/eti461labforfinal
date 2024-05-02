@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Categories</title>
+<style>
+    /* Styles for the table */
+</style>
+</head>
+<body>
+
+<h2>Categories</h2>
+
+<!-- Form for adding a new category -->
+<form action="/display" method="post">
+  <label for="category">New Category:</label>
+  <input type="text" id="category" name="category">
+  <button type="submit">Add Category</button>
+</form>
+
+<!-- Table to display existing categories -->
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in data %}
+    <tr>
+      <td>{{ row[0] }}</td>
+      <td>{{ row[1] }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+</body>
+</html>
